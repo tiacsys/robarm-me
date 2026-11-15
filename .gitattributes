@@ -1,0 +1,10 @@
+# Line endings, diff drivers and GitHub hints (repo-layouts.md §1).
+* text=auto eol=lf
+# .FCStd is a zip file: readable diffs through the textconv driver `fcstd` (set by the
+# workspace bootstrap, D63, D100); it cannot be merged, so a conflict means: take one side
+# and redo the other change.
+*.FCStd diff=fcstd -merge -text
+*.FCBak binary
+*.3mf binary
+*.stl binary
+generated/** linguist-generated=true

@@ -1,0 +1,12 @@
+# Tools that robarm-me needs on top of xdmod/tools.yaml (D19).
+# Format: xdmod/curatrix/README.md ("tools.yaml").
+tools: []
+system:
+  # FreeCAD is used from the machine. The files are written by FreeCAD 1.1, so any 1.1 release
+  # may open them. xdmod pins the exact FreeCADCmd version used for checks and exports.
+  - name: freecad
+    version: "1.1.*"
+    cmd: [FreeCADCmd, --version]
+    regex: 'FreeCAD (\d+\.\d+\.\d+)'
+    optional: true
+    roles: [me, integration, full]

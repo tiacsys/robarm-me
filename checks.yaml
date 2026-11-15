@@ -1,0 +1,20 @@
+# What `curatrix check robarm-me` runs (format: xdmod/curatrix/README.md, "checks.yaml").
+version: 1
+area: robarm-me
+
+docs:                                   # CK-A6 strict docs build (me-design + upstream se-req, se-arch)
+  registry: docs/documents.yaml
+
+ids:                                    # CK-C1, CK-C2
+  ledger: ids.yaml
+  exclude: ["*.md", "claude/**", ".github/**"]
+
+cad:                                    # CK-D4 (plain Python, also without FreeCAD), CK-H1
+  freecad: ["parts/*.FCStd", "assemblies/**/*.FCStd", "lib/**/*.FCStd"]
+  needs: generated/cad-needs.json
+  freecad_json: generated/freecad       # semantic JSON per .FCStd (diffs, review, D63)
+
+requirements: true                      # CK-E2, CK-E3 on the ME requirements
+
+# Domain checks (CK-F3 parameters vs. model, CK-F4 recompute) are added as `commands` once the
+# first FreeCAD file exists.

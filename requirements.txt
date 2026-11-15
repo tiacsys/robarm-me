@@ -1,0 +1,2 @@
+# pip packages that robarm-me needs on top of xdmod/requirements.txt (D19). Pin every package
+# with ==. Nothing yet: the FreeCAD readers in curatrix are plain Python.
