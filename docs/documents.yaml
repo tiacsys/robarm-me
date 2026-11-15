@@ -1,0 +1,38 @@
+# zdocs registry of robarm-me (doc-architecture.md §3).
+# It lists this repo's own documents first, then the upstream documents. Upstream documents are
+# built locally from their west checkouts (doc_dir), so that links into upstream needs resolve
+# in this build (D35). Indirect upstream documents are listed by hand until zdocs #26/#27 land.
+# Format: tools/zdocs/doc/manual/reference/registry-schema.rst.
+# base_url is only used for links outside the HTML tree (PDFs, iteration 2).
+base_url: "https://tiacsys.github.io/robarm-manifest/"
+
+groups:
+  - id: g-me
+    title: "Mechanical"
+  - id: g-sys
+    title: "System"
+
+documents:
+  # own documents
+  me-design:
+    title: "ME Requirements and Design"
+    group: g-me
+    version_project: robarm-me
+    builders: [html]
+    needs: {source: json}
+
+  # upstream documents (built locally from the sibling west projects, D35)
+  se-req:
+    title: "Stakeholder and System Requirements Specification"
+    group: g-sys
+    doc_dir: ../../robarm-syseng/docs/se-req
+    version_project: robarm-syseng
+    builders: [html]
+    needs: {source: json}
+  se-arch:
+    title: "System Architecture"
+    group: g-sys
+    doc_dir: ../../robarm-syseng/docs/se-arch
+    version_project: robarm-syseng
+    builders: [html]
+    needs: {source: json}
