@@ -4,7 +4,7 @@ Mechanical engineering of the robot arm example of [XDMOD](https://github.com/ti
 FreeCAD parts and assemblies, drawing templates, print settings, and the ME design document.
 
 Status: **skeleton** (Phase 4). The structure, the checks and an empty document are in place; the
-content comes in Phase 5.
+content comes in Phase 6.
 
 ## Layout
 
