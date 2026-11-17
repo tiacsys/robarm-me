@@ -30,8 +30,8 @@
       },
       "label": "BoardOutline",
       "placement": {
-        "Px": 0.0,
-        "Py": 0.0,
+        "Px": 5.0,
+        "Py": 5.0,
         "Pz": 8.0,
         "Q0": 0.0,
         "Q1": 0.0,
@@ -85,8 +85,8 @@
         ]
       },
       "placement": {
-        "Px": 0.0,
-        "Py": 0.0,
+        "Px": 5.0,
+        "Py": 5.0,
         "Pz": 8.0,
         "Q0": 0.0,
         "Q1": 0.0,
@@ -138,9 +138,9 @@
         ]
       },
       "placement": {
-        "Px": 10.0,
-        "Py": 5.0,
-        "Pz": 5.0,
+        "Px": 20.0,
+        "Py": 15.0,
+        "Pz": 0.0,
         "Q0": 0.0,
         "Q1": 0.0,
         "Q2": 0.0,
@@ -153,10 +153,24 @@
     },
     "MasterSketch": {
       "constraints": {
-        "partLength": 20.0
+        "boss1X": 9.0,
+        "boss1Y": 9.0,
+        "boss2X": 29.0,
+        "boss2Y": 21.0,
+        "bossHeight": 3.4,
+        "partLength": 40.0,
+        "plateThickness": 3.0,
+        "plateWidth": 30.0
       },
       "expressions": {
-        ".Constraints.partLength": "Params.canaryPart_length"
+        ".Constraints.boss1X": "Params.boardSeat_x + Params.boardSeat_hole1X",
+        ".Constraints.boss1Y": "Params.boardSeat_y + Params.boardSeat_hole1Y",
+        ".Constraints.boss2X": "Params.boardSeat_x + Params.boardSeat_hole2X",
+        ".Constraints.boss2Y": "Params.boardSeat_y + Params.boardSeat_hole2Y",
+        ".Constraints.bossHeight": "Params.boardSeat_z - 1.6 mm - Params.canaryPart_thickness",
+        ".Constraints.partLength": "Params.canaryPart_length",
+        ".Constraints.plateThickness": "Params.canaryPart_thickness",
+        ".Constraints.plateWidth": "Params.boardSeat_depth + 2 * Params.boardSeat_y"
       },
       "label": "MasterSketch",
       "placement": {
@@ -611,6 +625,7 @@
       "A13": "'boardSeat_x",
       "A14": "'boardSeat_y",
       "A15": "'boardSeat_z",
+      "A16": "'canaryPart_thickness",
       "A2": "'mount_holeSpacing",
       "A3": "'mount_x",
       "A4": "'mount_y",
@@ -626,14 +641,15 @@
       "boardSeat_hole2Y": "16 mm",
       "boardSeat_holeDiameter": "3.2 mm",
       "boardSeat_width": "30 mm",
-      "boardSeat_x": "0 mm",
-      "boardSeat_y": "0 mm",
+      "boardSeat_x": "5 mm",
+      "boardSeat_y": "5 mm",
       "boardSeat_z": "8 mm",
-      "canaryPart_length": "20 mm",
+      "canaryPart_length": "40 mm",
+      "canaryPart_thickness": "3 mm",
       "mount_holeSpacing": "12 mm",
-      "mount_x": "10 mm",
-      "mount_y": "5 mm",
-      "mount_z": "5 mm"
+      "mount_x": "20 mm",
+      "mount_y": "15 mm",
+      "mount_z": "0 mm"
     }
   }
 }

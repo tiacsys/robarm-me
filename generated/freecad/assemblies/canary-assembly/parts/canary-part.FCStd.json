@@ -4,11 +4,22 @@
   },
   "file": "assemblies/canary-assembly/parts/canary-part.FCStd",
   "objects": {
-    "CanaryBlock": {
-      "expressions": {
-        "Length": "canary_assembly_skeleton#MasterSketch.Constraints.partLength"
+    "BasePlate": {
+      "label": "Canary base plate",
+      "links": {
+        "Base": [
+          {
+            "file": "",
+            "object": "PlateWithBosses"
+          }
+        ],
+        "Tool": [
+          {
+            "file": "",
+            "object": "InsertHoles"
+          }
+        ]
       },
-      "label": "Canary part",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,
@@ -23,13 +34,164 @@
         "Realizes": "SYS-EL-0001",
         "TraceID": "ME-PART-0001"
       },
-      "type": "Part::Box",
+      "type": "Part::Cut",
       "values": {
-        "Height": 5.0,
-        "Length": 20.0,
         "Material": "PLA",
         "PrintProfile": "pla-standard",
-        "Width": 10.0
+        "Refine": "true"
+      }
+    },
+    "Boss1": {
+      "expressions": {
+        ".Placement.Base.x": "canary_assembly_skeleton#MasterSketch.Constraints.boss1X",
+        ".Placement.Base.y": "canary_assembly_skeleton#MasterSketch.Constraints.boss1Y",
+        ".Placement.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness",
+        "Height": "canary_assembly_skeleton#MasterSketch.Constraints.bossHeight"
+      },
+      "label": "Boss1",
+      "placement": {
+        "Px": 9.0,
+        "Py": 9.0,
+        "Pz": 3.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::Cylinder",
+      "values": {
+        "Angle": 360.0,
+        "FirstAngle": 0.0,
+        "Height": 3.4,
+        "Radius": 4.0,
+        "SecondAngle": 0.0
+      }
+    },
+    "Boss2": {
+      "expressions": {
+        ".Placement.Base.x": "canary_assembly_skeleton#MasterSketch.Constraints.boss2X",
+        ".Placement.Base.y": "canary_assembly_skeleton#MasterSketch.Constraints.boss2Y",
+        ".Placement.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness",
+        "Height": "canary_assembly_skeleton#MasterSketch.Constraints.bossHeight"
+      },
+      "label": "Boss2",
+      "placement": {
+        "Px": 29.0,
+        "Py": 21.0,
+        "Pz": 3.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::Cylinder",
+      "values": {
+        "Angle": 360.0,
+        "FirstAngle": 0.0,
+        "Height": 3.4,
+        "Radius": 4.0,
+        "SecondAngle": 0.0
+      }
+    },
+    "CanaryBlock": {
+      "expressions": {
+        "Height": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness",
+        "Length": "canary_assembly_skeleton#MasterSketch.Constraints.partLength",
+        "Width": "canary_assembly_skeleton#MasterSketch.Constraints.plateWidth"
+      },
+      "label": "Plate",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::Box",
+      "values": {
+        "Height": 3.0,
+        "Length": 40.0,
+        "Width": 30.0
+      }
+    },
+    "InsertHole1": {
+      "expressions": {
+        ".Placement.Base.x": "canary_assembly_skeleton#MasterSketch.Constraints.boss1X",
+        ".Placement.Base.y": "canary_assembly_skeleton#MasterSketch.Constraints.boss1Y",
+        "Height": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness + canary_assembly_skeleton#MasterSketch.Constraints.bossHeight + 2 mm"
+      },
+      "label": "InsertHole1",
+      "placement": {
+        "Px": 9.0,
+        "Py": 9.0,
+        "Pz": -1.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::Cylinder",
+      "values": {
+        "Angle": 360.0,
+        "FirstAngle": 0.0,
+        "Height": 8.4,
+        "Radius": 2.0,
+        "SecondAngle": 0.0
+      }
+    },
+    "InsertHole2": {
+      "expressions": {
+        ".Placement.Base.x": "canary_assembly_skeleton#MasterSketch.Constraints.boss2X",
+        ".Placement.Base.y": "canary_assembly_skeleton#MasterSketch.Constraints.boss2Y",
+        "Height": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness + canary_assembly_skeleton#MasterSketch.Constraints.bossHeight + 2 mm"
+      },
+      "label": "InsertHole2",
+      "placement": {
+        "Px": 29.0,
+        "Py": 21.0,
+        "Pz": -1.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::Cylinder",
+      "values": {
+        "Angle": 360.0,
+        "FirstAngle": 0.0,
+        "Height": 8.4,
+        "Radius": 2.0,
+        "SecondAngle": 0.0
+      }
+    },
+    "InsertHoles": {
+      "label": "InsertHoles",
+      "links": {
+        "Shapes": [
+          {
+            "file": "",
+            "object": "InsertHole1"
+          },
+          {
+            "file": "",
+            "object": "InsertHole2"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::MultiFuse",
+      "values": {
+        "Refine": "true"
       }
     },
     "Origin": {
@@ -48,7 +210,42 @@
         "Role": "Origin"
       }
     },
+    "PlateWithBosses": {
+      "label": "PlateWithBosses",
+      "links": {
+        "Shapes": [
+          {
+            "file": "",
+            "object": "CanaryBlock"
+          },
+          {
+            "file": "",
+            "object": "Boss1"
+          },
+          {
+            "file": "",
+            "object": "Boss2"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::MultiFuse",
+      "values": {
+        "Refine": "true"
+      }
+    },
     "VersionMark": {
+      "expressions": {
+        ".Placement.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness"
+      },
       "label": "VersionMark",
       "links": {
         "OriginFeatures": [
@@ -83,9 +280,9 @@
         ]
       },
       "placement": {
-        "Px": 2.0,
-        "Py": 3.0,
-        "Pz": 5.0,
+        "Px": 15.0,
+        "Py": 1.0,
+        "Pz": 3.0,
         "Q0": 0.0,
         "Q1": 0.0,
         "Q2": 0.0,

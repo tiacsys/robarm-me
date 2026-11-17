@@ -1,0 +1,5 @@
+# Moves of the exploded view (`curatrix cam`), in mm: {link name: [dx, dy, dz]}. The screws lift
+# straight up out of the bosses; the base plate stays.
+CanaryPart: [0, 0, 0]
+BoardScrew1: [0, 0, 15]
+BoardScrew2: [0, 0, 15]
