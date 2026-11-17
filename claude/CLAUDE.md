@@ -30,6 +30,11 @@ parts (`lib/`), TechDraw templates (`templates/`), print profiles (`print/`), sc
   e.g. `../../../robarm-freecad-pcba/boards/...` from `assemblies/<asm>/<asm>.FCStd`: CK-F21 resolves it
   from the file's folder and only sees links that land in the library's `boards/`. When the library
   has a newer version, CK-F21 warns; moving an assembly to it is an ME change in its own PR.
+- **Assembly document** `docs/asm-<name>/` (task 5.27): one `xd-asm-*` directive per section, the
+  same for every assembly. Drawings, exploded view, renderings, mass and findings come only from
+  `curatrix cam robarm-me <name>` of the current commit (CK-D10 warns); run it before `curatrix
+  docs robarm-me`. Give own parts a `Material`, bought `lib/` parts `Manufacturer` and `MPN`, and
+  standard fasteners a `Standard` designation (`ISO 4762 M3x10, A2`) instead (CK-F12).
 - After a FreeCAD change: `curatrix gen all robarm-me` (cad-needs and semantic JSON in
   `generated/freecad/`), and commit them with the `.FCStd`.
 - `.FCStd` files cannot be merged (`-merge` in `.gitattributes`). On a conflict, take one side
