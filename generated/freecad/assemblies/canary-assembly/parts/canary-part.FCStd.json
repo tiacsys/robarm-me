@@ -2,7 +2,7 @@
   "document": {
     "Label": "canary-part"
   },
-  "file": "parts/canary-part.FCStd",
+  "file": "assemblies/canary-assembly/parts/canary-part.FCStd",
   "objects": {
     "CanaryBlock": {
       "label": "Canary part",

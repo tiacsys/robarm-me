@@ -17,12 +17,13 @@ parts (`lib/`), TechDraw templates (`templates/`), print profiles (`print/`), sc
   `Realizes`, `Satisfies`, `Conforms`, `PartOf`, `Status`, `Configs`, `Port` (on an LCS: the
   `ME-PORT`). `ME-ASM` and `ME-PORT` belong to the ME model (`model/`); the top document of an
   assembly carries its `ME-ASM` only as `TraceID` on the assembly object, without link fields
-  (XD-ADR-0128).
+  (XD-ADR-0128). Placeholders inside `.FCStd` are refused: ask for an ID with
+  `curatrix ids new ME-PART` and set it in FreeCAD.
 - **Assemblies** (XD-ADR-0137): a new assembly def in `model/`, then `curatrix new asm <Def>
-  --repo robarm-me` (folder, top document, `skeleton.FCStd`, `asm-<name>` document). One FreeCAD
+  --repo robarm-me` (folder, top document, `<name>-skeleton.FCStd`, `asm-<name>` document). One FreeCAD
   link per usage in the model (CK-F15); parts refer only to the skeleton, never to the top
-  document (CK-F14). Placeholders inside
-  `.FCStd` are refused: ask for an ID with `curatrix ids new ME-PART` and set it in FreeCAD.
+  document (CK-F14). A part that takes values from a skeleton belongs to that assembly
+  (`assemblies/<name>/parts/`); a shared part in `parts/` takes none.
 - After a FreeCAD change: `curatrix gen all robarm-me` (cad-needs and semantic JSON in
   `generated/freecad/`), and commit them with the `.FCStd`.
 - `.FCStd` files cannot be merged (`-merge` in `.gitattributes`). On a conflict, take one side

@@ -32,7 +32,7 @@ cad:                                    # CK-D4 (plain Python, also without Free
 requirements: true                      # CK-E2, CK-E3 on the ME requirements
 
 # FreeCAD assemblies (plain Python, with the model section): CK-F14 the 1:1 between assembly defs of
-# the ME model and FreeCAD documents (assemblies/<name>/<name>.FCStd + skeleton.FCStd, XD-ADR-0137),
+# the ME model and FreeCAD documents (assemblies/<name>/<name>.FCStd + <name>-skeleton.FCStd, XD-ADR-0137),
 # CK-F15 the FreeCAD links per part vs the usages in the ME and system models (XD-ADR-0138).
 
 # CK-H6: exactly the checks this repo runs (built-in and commands). A section that goes

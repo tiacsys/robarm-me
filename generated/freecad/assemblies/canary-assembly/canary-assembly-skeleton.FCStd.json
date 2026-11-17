@@ -1,8 +1,8 @@
 {
   "document": {
-    "Label": "skeleton"
+    "Label": "canary-assembly-skeleton"
   },
-  "file": "assemblies/canary-assembly/skeleton.FCStd",
+  "file": "assemblies/canary-assembly/canary-assembly-skeleton.FCStd",
   "objects": {
     "MasterSketch": {
       "label": "MasterSketch",

@@ -9,12 +9,12 @@
           "configs": [
             "SYS-CFG-0001"
           ],
-          "content": "FreeCAD object ``CanaryBlock`` (Part::Box) in ``parts/canary-part.FCStd``.",
+          "content": "FreeCAD object ``CanaryBlock`` (Part::Box) in ``assemblies/canary-assembly/parts/canary-part.FCStd``.",
           "id": "ME-PART-0001",
           "realizes": [
             "SYS-EL-0001"
           ],
-          "source_file": "parts/canary-part.FCStd",
+          "source_file": "assemblies/canary-assembly/parts/canary-part.FCStd",
           "status": "valid",
           "title": "Canary part",
           "type": "me-part"
