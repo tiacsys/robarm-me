@@ -9,8 +9,9 @@ package RobArmMe {
     private import XdDomain::*;
 
     public package Canary {
-        // The canary part of parts/canary-part.FCStd. ME-PART stays owned by the FreeCAD file
-        // (XD-ADR-0128); the short name is a reference to it, so the model can count its usages.
+        // The canary part assemblies/canary-assembly/parts/canary-part.FCStd: an own part of the
+        // canary assembly (it takes its main dimension from the assembly's skeleton, task 5.24).
+        // ME-PART stays owned by the FreeCAD file (XD-ADR-0128); the short name is a reference to it, so the model can count its usages.
         part def <'ME-PART-0001'> CanaryPart;
 
         // The canary assembly realizes the canary unit. It has one usage of the canary part, so
