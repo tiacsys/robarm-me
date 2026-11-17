@@ -1,0 +1,827 @@
+[
+ {
+  "identity": {
+   "@id": "RobArmMe"
+  },
+  "payload": {
+   "@id": "RobArmMe",
+   "@type": "Package",
+   "declaredName": "RobArmMe",
+   "documentation": [
+    {
+     "@id": "RobArmMe/0/0"
+    }
+   ],
+   "isLibraryElement": false,
+   "name": "RobArmMe",
+   "ownedMember": [
+    {
+     "@id": "RobArmMe/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe/0"
+    },
+    {
+     "@id": "RobArmMe/1"
+    },
+    {
+     "@id": "RobArmMe/2"
+    },
+    {
+     "@id": "RobArmMe/3"
+    }
+   ],
+   "qualifiedName": "RobArmMe"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe/0"
+  },
+  "payload": {
+   "@id": "RobArmMe/0",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe/0/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe/0/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe"
+    },
+    {
+     "@id": "RobArmMe/0/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe/0/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe/0/0",
+   "@type": "Documentation",
+   "annotatedElement": [
+    {
+     "@id": "RobArmMe"
+    }
+   ],
+   "body": "The mechanical domain model of the robot arm. ",
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmMe"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe/1"
+  },
+  "payload": {
+   "@id": "RobArmMe/1",
+   "@type": "NamespaceImport",
+   "importedNamespace": {
+    "@id": "lib:XdTrace"
+   },
+   "isLibraryElement": false,
+   "relatedElement": [
+    {
+     "@id": "RobArmMe"
+    },
+    {
+     "@id": "lib:XdTrace"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe"
+    }
+   ],
+   "target": [
+    {
+     "@id": "lib:XdTrace"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe/2"
+  },
+  "payload": {
+   "@id": "RobArmMe/2",
+   "@type": "NamespaceImport",
+   "importedNamespace": {
+    "@id": "lib:XdDomain"
+   },
+   "isLibraryElement": false,
+   "relatedElement": [
+    {
+     "@id": "RobArmMe"
+    },
+    {
+     "@id": "lib:XdDomain"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe"
+    }
+   ],
+   "target": [
+    {
+     "@id": "lib:XdDomain"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe/3"
+  },
+  "payload": {
+   "@id": "RobArmMe/3",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary"
+   },
+   "memberName": "Canary",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe"
+    },
+    {
+     "@id": "RobArmMe::Canary"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary",
+   "@type": "Package",
+   "declaredName": "Canary",
+   "isLibraryElement": false,
+   "name": "Canary",
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary/0"
+    },
+    {
+     "@id": "RobArmMe::Canary/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe/3"
+   },
+   "qualifiedName": "RobArmMe::Canary"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary/0",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryPart"
+   },
+   "memberName": "CanaryPart",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary/1"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary/1",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "memberName": "CanaryAssembly",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly",
+   "@type": "PartDefinition",
+   "declaredName": "CanaryAssembly",
+   "declaredShortName": "ME-ASM-0001",
+   "documentation": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+    }
+   ],
+   "feature": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "isAbstract": false,
+   "isConjugated": false,
+   "isLibraryElement": false,
+   "isVariation": false,
+   "name": "CanaryAssembly",
+   "ownedFeature": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "ownedPart": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/1"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/2"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/3"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary/1"
+   },
+   "qualifiedName": "RobArmMe::Canary::CanaryAssembly",
+   "shortName": "ME-ASM-0001"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/0",
+   "@type": "Subclassification",
+   "general": {
+    "@id": "lib:RobArmProduct::Canary::CanaryUnit"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    },
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryUnit"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "subclassifier": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "superclassifier": {
+    "@id": "lib:RobArmProduct::Canary::CanaryUnit"
+   },
+   "target": [
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryUnit"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/1"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/1",
+   "@type": "Subclassification",
+   "general": {
+    "@id": "lib:XdDomain::Assembly"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    },
+    {
+     "@id": "lib:XdDomain::Assembly"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "subclassifier": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "superclassifier": {
+    "@id": "lib:XdDomain::Assembly"
+   },
+   "target": [
+    {
+     "@id": "lib:XdDomain::Assembly"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/2"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/2",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/2/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/2/0",
+   "@type": "Documentation",
+   "annotatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "body": "The canary assembly (canary step C2): the canary part, placed once. ",
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryAssembly/2"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/3"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly/3",
+   "@type": "FeatureMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   },
+   "memberName": "canaryPart",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart",
+   "@type": "PartUsage",
+   "declaredName": "canaryPart",
+   "definition": [
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": true,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": false,
+   "isVariation": false,
+   "name": "canaryPart",
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryAssembly/3"
+   },
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryAssembly"
+   },
+   "qualifiedName": "RobArmMe::Canary::CanaryAssembly::canaryPart",
+   "type": [
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/0",
+   "@type": "FeatureTyping",
+   "general": {
+    "@id": "RobArmMe::Canary::CanaryPart"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   },
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryPart"
+    }
+   ],
+   "type": {
+    "@id": "RobArmMe::Canary::CanaryPart"
+   },
+   "typedFeature": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1/0",
+   "@type": "Multiplicity",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryAssembly::canaryPart/1"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryPart"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryPart",
+   "@type": "PartDefinition",
+   "declaredName": "CanaryPart",
+   "declaredShortName": "ME-PART-0001",
+   "isAbstract": false,
+   "isConjugated": false,
+   "isLibraryElement": false,
+   "isVariation": false,
+   "name": "CanaryPart",
+   "owner": {
+    "@id": "RobArmMe::Canary"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary/0"
+   },
+   "qualifiedName": "RobArmMe::Canary::CanaryPart",
+   "shortName": "ME-PART-0001"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:RobArmProduct::Canary::CanaryUnit"
+  },
+  "payload": {
+   "@id": "lib:RobArmProduct::Canary::CanaryUnit",
+   "@type": "PartDefinition",
+   "declaredName": "CanaryUnit",
+   "declaredShortName": "SYS-EL-0001",
+   "isLibraryElement": true,
+   "name": "CanaryUnit",
+   "qualifiedName": "RobArmProduct::Canary::CanaryUnit"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:XdDomain"
+  },
+  "payload": {
+   "@id": "lib:XdDomain",
+   "@type": "LibraryPackage",
+   "declaredName": "XdDomain",
+   "isLibraryElement": true,
+   "name": "XdDomain",
+   "qualifiedName": "XdDomain"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:XdDomain::Assembly"
+  },
+  "payload": {
+   "@id": "lib:XdDomain::Assembly",
+   "@type": "PartDefinition",
+   "declaredName": "Assembly",
+   "isLibraryElement": true,
+   "name": "Assembly",
+   "qualifiedName": "XdDomain::Assembly"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:XdTrace"
+  },
+  "payload": {
+   "@id": "lib:XdTrace",
+   "@type": "LibraryPackage",
+   "declaredName": "XdTrace",
+   "isLibraryElement": true,
+   "name": "XdTrace",
+   "qualifiedName": "XdTrace"
+  }
+ }
+]

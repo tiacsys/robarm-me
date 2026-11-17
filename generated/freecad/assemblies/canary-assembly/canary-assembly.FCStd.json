@@ -1,0 +1,276 @@
+{
+  "document": {
+    "Label": "canary-assembly"
+  },
+  "file": "assemblies/canary-assembly/canary-assembly.FCStd",
+  "objects": {
+    "Assembly": {
+      "label": "Canary Assembly",
+      "links": {
+        "Group": [
+          {
+            "file": "",
+            "object": "Joints"
+          },
+          {
+            "file": "",
+            "object": "Skeleton"
+          },
+          {
+            "file": "",
+            "object": "CanaryPart"
+          }
+        ],
+        "Origin": [
+          {
+            "file": "",
+            "object": "Origin"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "trace": {
+        "TraceID": "ME-ASM-0001"
+      },
+      "type": "Assembly::AssemblyObject",
+      "values": {
+        "Id": "",
+        "License": "",
+        "LicenseURL": "",
+        "Type": ""
+      }
+    },
+    "CanaryPart": {
+      "label": "canaryPart",
+      "links": {
+        "LinkedObject": [
+          {
+            "file": "../../parts/canary-part.FCStd",
+            "object": "CanaryBlock"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Link",
+      "values": {
+        "ElementCount": "0",
+        "LinkClaimChild": "false",
+        "LinkCopyOnChangeTouched": "false",
+        "LinkExecute": "",
+        "LinkTransform": "false",
+        "Scale": 1.0,
+        "ShowElement": "true",
+        "_LinkOwner": "0"
+      }
+    },
+    "Joints": {
+      "label": "Joints",
+      "type": "Assembly::JointGroup"
+    },
+    "Origin": {
+      "label": "Origin",
+      "links": {
+        "OriginFeatures": [
+          {
+            "file": "",
+            "object": "X_Axis"
+          },
+          {
+            "file": "",
+            "object": "Y_Axis"
+          },
+          {
+            "file": "",
+            "object": "Z_Axis"
+          },
+          {
+            "file": "",
+            "object": "XY_Plane"
+          },
+          {
+            "file": "",
+            "object": "XZ_Plane"
+          },
+          {
+            "file": "",
+            "object": "YZ_Plane"
+          },
+          {
+            "file": "",
+            "object": "Origin001"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Origin"
+    },
+    "Origin001": {
+      "label": "Origin001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Point",
+      "values": {
+        "Role": "Origin"
+      }
+    },
+    "Skeleton": {
+      "label": "Skeleton",
+      "links": {
+        "LinkedObject": [
+          {
+            "file": "skeleton.FCStd",
+            "object": "Skeleton"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Link",
+      "values": {
+        "ElementCount": "0",
+        "LinkClaimChild": "false",
+        "LinkCopyOnChangeTouched": "false",
+        "LinkExecute": "",
+        "LinkTransform": "false",
+        "Scale": 1.0,
+        "ShowElement": "true",
+        "_LinkOwner": "0"
+      }
+    },
+    "XY_Plane": {
+      "label": "XY-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XY_Plane"
+      }
+    },
+    "XZ_Plane": {
+      "label": "XZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.707107,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 0.707107
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XZ_Plane"
+      }
+    },
+    "X_Axis": {
+      "label": "X-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "X_Axis"
+      }
+    },
+    "YZ_Plane": {
+      "label": "YZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "YZ_Plane"
+      }
+    },
+    "Y_Axis": {
+      "label": "Y-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Y_Axis"
+      }
+    },
+    "Z_Axis": {
+      "label": "Z-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": -0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Z_Axis"
+      }
+    }
+  },
+  "spreadsheets": {}
+}

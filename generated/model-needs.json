@@ -1,0 +1,27 @@
+{
+  "created": "",
+  "current_version": "",
+  "project": "robarm-me-model",
+  "versions": {
+    "": {
+      "needs": {
+        "ME-ASM-0001": {
+          "configs": [
+            "SYS-CFG-0001"
+          ],
+          "content": "SysML ``PartDefinition`` ``RobArmMe::Canary::CanaryAssembly``.",
+          "id": "ME-ASM-0001",
+          "qualified_name": "RobArmMe::Canary::CanaryAssembly",
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PartDefinition",
+          "title": "CanaryAssembly",
+          "type": "me-asm"
+        }
+      }
+    }
+  }
+}

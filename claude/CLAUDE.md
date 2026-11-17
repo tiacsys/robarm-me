@@ -14,7 +14,14 @@ parts (`lib/`), TechDraw templates (`templates/`), print profiles (`print/`), sc
 - **Start FreeCAD only through `curatrix launch freecad`.** It uses a workspace-local config that
   saves `.FCStd` files uncompressed (D63). A compressed file fails CK-H1.
 - **Trace fields** are object properties (group `Trace`): `TraceID` (`ME-PART`, `ME-ASM`),
-  `Realizes`, `Satisfies`, `Conforms`, `PartOf`, `Status`, `Configs`. Placeholders inside
+  `Realizes`, `Satisfies`, `Conforms`, `PartOf`, `Status`, `Configs`, `Port` (on an LCS: the
+  `ME-PORT`). `ME-ASM` and `ME-PORT` belong to the ME model (`model/`); the top document of an
+  assembly carries its `ME-ASM` only as `TraceID` on the assembly object, without link fields
+  (XD-ADR-0128).
+- **Assemblies** (XD-ADR-0137): a new assembly def in `model/`, then `curatrix new asm <Def>
+  --repo robarm-me` (folder, top document, `skeleton.FCStd`, `asm-<name>` document). One FreeCAD
+  link per usage in the model (CK-F15); parts refer only to the skeleton, never to the top
+  document (CK-F14). Placeholders inside
   `.FCStd` are refused: ask for an ID with `curatrix ids new ME-PART` and set it in FreeCAD.
 - After a FreeCAD change: `curatrix gen all robarm-me` (cad-needs and semantic JSON in
   `generated/freecad/`), and commit them with the `.FCStd`.

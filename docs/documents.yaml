@@ -21,6 +21,13 @@ documents:
     builders: [html]
     needs: {source: json}
 
+  asm-canary-assembly:
+    title: "Canary Assembly"
+    group: g-me
+    version_project: robarm-me
+    builders: [html]
+    needs: {source: json}
+
   # upstream documents (built locally from the sibling west projects, D35)
   se-req:
     title: "Stakeholder and System Requirements Specification"
