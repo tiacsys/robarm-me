@@ -4,6 +4,100 @@
   },
   "file": "assemblies/canary-assembly/canary-assembly-skeleton.FCStd",
   "objects": {
+    "BoardOutline": {
+      "constraints": {
+        "depth": 20.0,
+        "hole1D": 3.2,
+        "hole1X": 4.0,
+        "hole1Y": 4.0,
+        "hole2D": 3.2,
+        "hole2X": 26.0,
+        "hole2Y": 16.0,
+        "width": 30.0
+      },
+      "expressions": {
+        ".Constraints.depth": "Params.boardSeat_depth",
+        ".Constraints.hole1D": "Params.boardSeat_holeDiameter",
+        ".Constraints.hole1X": "Params.boardSeat_hole1X",
+        ".Constraints.hole1Y": "Params.boardSeat_hole1Y",
+        ".Constraints.hole2D": "Params.boardSeat_holeDiameter",
+        ".Constraints.hole2X": "Params.boardSeat_hole2X",
+        ".Constraints.hole2Y": "Params.boardSeat_hole2Y",
+        ".Constraints.width": "Params.boardSeat_width",
+        ".Placement.Base.x": "Params.boardSeat_x",
+        ".Placement.Base.y": "Params.boardSeat_y",
+        ".Placement.Base.z": "Params.boardSeat_z"
+      },
+      "label": "BoardOutline",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 8.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Sketcher::SketchObject",
+      "values": {
+        "FullyConstrained": "true",
+        "MakeInternals": "false",
+        "_ExternalGeoVersion": "1"
+      }
+    },
+    "LCS_boardSeat": {
+      "expressions": {
+        ".Placement.Base.x": "Params.boardSeat_x",
+        ".Placement.Base.y": "Params.boardSeat_y",
+        ".Placement.Base.z": "Params.boardSeat_z"
+      },
+      "label": "LCS_boardSeat",
+      "links": {
+        "OriginFeatures": [
+          {
+            "file": "",
+            "object": "X_Axis002"
+          },
+          {
+            "file": "",
+            "object": "Y_Axis002"
+          },
+          {
+            "file": "",
+            "object": "Z_Axis002"
+          },
+          {
+            "file": "",
+            "object": "XY_Plane002"
+          },
+          {
+            "file": "",
+            "object": "XZ_Plane002"
+          },
+          {
+            "file": "",
+            "object": "YZ_Plane002"
+          },
+          {
+            "file": "",
+            "object": "Origin003"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 8.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "trace": {
+        "Port": "ME-PORT-0002"
+      },
+      "type": "Part::LocalCoordinateSystem"
+    },
     "LCS_mount": {
       "expressions": {
         ".Placement.Base.x": "Params.mount_x",
@@ -158,6 +252,22 @@
         "Role": "Origin"
       }
     },
+    "Origin003": {
+      "label": "Origin003",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Point",
+      "values": {
+        "Role": "Origin"
+      }
+    },
     "Skeleton": {
       "label": "Skeleton",
       "links": {
@@ -169,6 +279,14 @@
           {
             "file": "",
             "object": "LCS_mount"
+          },
+          {
+            "file": "",
+            "object": "LCS_boardSeat"
+          },
+          {
+            "file": "",
+            "object": "BoardOutline"
           }
         ],
         "Origin": [
@@ -227,6 +345,22 @@
         "Role": "XY_Plane"
       }
     },
+    "XY_Plane002": {
+      "label": "XY-plane002",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XY_Plane"
+      }
+    },
     "XZ_Plane": {
       "label": "XZ-plane",
       "placement": {
@@ -245,6 +379,22 @@
     },
     "XZ_Plane001": {
       "label": "XZ-plane001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.707107,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 0.707107
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XZ_Plane"
+      }
+    },
+    "XZ_Plane002": {
+      "label": "XZ-plane002",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,
@@ -291,6 +441,22 @@
         "Role": "X_Axis"
       }
     },
+    "X_Axis002": {
+      "label": "X-axis002",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "X_Axis"
+      }
+    },
     "YZ_Plane": {
       "label": "YZ-plane",
       "placement": {
@@ -309,6 +475,22 @@
     },
     "YZ_Plane001": {
       "label": "YZ-plane001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "YZ_Plane"
+      }
+    },
+    "YZ_Plane002": {
+      "label": "YZ-plane002",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,
@@ -355,6 +537,22 @@
         "Role": "Y_Axis"
       }
     },
+    "Y_Axis002": {
+      "label": "Y-axis002",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Y_Axis"
+      }
+    },
     "Z_Axis": {
       "label": "Z-axis",
       "placement": {
@@ -386,15 +584,51 @@
       "values": {
         "Role": "Z_Axis"
       }
+    },
+    "Z_Axis002": {
+      "label": "Z-axis002",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": -0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Z_Axis"
+      }
     }
   },
   "spreadsheets": {
     "Params": {
       "A1": "'canaryPart_length",
+      "A10": "'boardSeat_hole2Y",
+      "A11": "'boardSeat_holeDiameter",
+      "A12": "'boardSeat_width",
+      "A13": "'boardSeat_x",
+      "A14": "'boardSeat_y",
+      "A15": "'boardSeat_z",
       "A2": "'mount_holeSpacing",
       "A3": "'mount_x",
       "A4": "'mount_y",
       "A5": "'mount_z",
+      "A6": "'boardSeat_depth",
+      "A7": "'boardSeat_hole1X",
+      "A8": "'boardSeat_hole1Y",
+      "A9": "'boardSeat_hole2X",
+      "boardSeat_depth": "20 mm",
+      "boardSeat_hole1X": "4 mm",
+      "boardSeat_hole1Y": "4 mm",
+      "boardSeat_hole2X": "26 mm",
+      "boardSeat_hole2Y": "16 mm",
+      "boardSeat_holeDiameter": "3.2 mm",
+      "boardSeat_width": "30 mm",
+      "boardSeat_x": "0 mm",
+      "boardSeat_y": "0 mm",
+      "boardSeat_z": "8 mm",
       "canaryPart_length": "20 mm",
       "mount_holeSpacing": "12 mm",
       "mount_x": "10 mm",
