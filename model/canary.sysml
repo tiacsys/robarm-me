@@ -22,6 +22,24 @@ package RobArmMe {
             attribute holeSpacing = 12 [mm];
         }
 
+        // The seat of the canary board (task 5.28, XD-ADR-0134): it conforms to the board's space
+        // budget CanaryBoardSpace (SYS-IF) of the system model. It takes over the budget values that
+        // drive FreeCAD: through `curatrix gen freecad-params` they become boardSeat_<attribute> in
+        // Params, the sketch BoardOutline of the skeleton follows them, and the KiCad StepUp push
+        // writes that sketch (outline and holes) into the KiCad board. The values are copies of the
+        // budget, so they do not count toward the ten parameters; change them only together with
+        // the budget, on one branch (co-design change).
+        port def <'ME-PORT-0002'> CanaryBoardSeat :> RobArmProduct::Canary::CanaryBoardSpace, MechanicalPort {
+            doc /* Outline and mounting holes of the canary board, in the board frame. */
+            :>> width = 30 [mm];
+            :>> depth = 20 [mm];
+            :>> holeDiameter = 3.2 [mm];
+            :>> hole1X = 4 [mm];
+            :>> hole1Y = 4 [mm];
+            :>> hole2X = 26 [mm];
+            :>> hole2Y = 16 [mm];
+        }
+
         // The canary assembly realizes the canary unit. It has one usage of the canary part, so
         // its top document has exactly one FreeCAD link to it (CK-F15, XD-ADR-0138).
         // Its parameters (XD-ADR-0137) reach FreeCAD through `curatrix gen freecad-params`: the
@@ -37,6 +55,13 @@ package RobArmMe {
                 :>> x = 10 [mm];
                 :>> y = 5 [mm];
                 :>> z = 5 [mm];
+            }
+            // the board frame in the assembly (LCS_boardSeat in the skeleton): the budget box ends
+            // heightBelow = 3 mm under the top face, so z = 8 mm puts it on the part (top face z = 5 mm)
+            port boardSeat : CanaryBoardSeat {
+                :>> x = 0 [mm];
+                :>> y = 0 [mm];
+                :>> z = 8 [mm];
             }
         }
     }

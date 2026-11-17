@@ -36,6 +36,25 @@
           "sysml_kind": "PortDefinition",
           "title": "CanaryMount",
           "type": "me-port"
+        },
+        "ME-PORT-0002": {
+          "conforms": [
+            "SYS-IF-0001"
+          ],
+          "content": "SysML ``PortDefinition`` ``RobArmMe::Canary::CanaryBoardSeat``.",
+          "id": "ME-PORT-0002",
+          "instances": [
+            "RobArmMe::Canary::CanaryAssembly::boardSeat"
+          ],
+          "part_of": [
+            "ME-ASM-0001"
+          ],
+          "qualified_name": "RobArmMe::Canary::CanaryBoardSeat",
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PortDefinition",
+          "title": "CanaryBoardSeat",
+          "type": "me-port"
         }
       }
     }
