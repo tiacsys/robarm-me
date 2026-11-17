@@ -19,6 +19,26 @@
           {
             "file": "",
             "object": "CanaryPart"
+          },
+          {
+            "file": "",
+            "object": "GroundedJoint"
+          },
+          {
+            "file": "",
+            "object": "BoardScrew1"
+          },
+          {
+            "file": "",
+            "object": "FixedScrew1"
+          },
+          {
+            "file": "",
+            "object": "BoardScrew2"
+          },
+          {
+            "file": "",
+            "object": "FixedScrew2"
           }
         ],
         "Origin": [
@@ -48,13 +68,75 @@
         "Type": ""
       }
     },
+    "BoardScrew1": {
+      "label": "boardScrew1",
+      "links": {
+        "LinkedObject": [
+          {
+            "file": "../../lib/iso7380-1-m3x6.FCStd",
+            "object": "Screw"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 9.0,
+        "Py": 9.0,
+        "Pz": 8.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Link",
+      "values": {
+        "ElementCount": "0",
+        "LinkClaimChild": "false",
+        "LinkCopyOnChangeTouched": "false",
+        "LinkExecute": "",
+        "LinkTransform": "false",
+        "Scale": 1.0,
+        "ShowElement": "true",
+        "_LinkOwner": "0"
+      }
+    },
+    "BoardScrew2": {
+      "label": "boardScrew2",
+      "links": {
+        "LinkedObject": [
+          {
+            "file": "../../lib/iso7380-1-m3x6.FCStd",
+            "object": "Screw"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 29.0,
+        "Py": 21.0,
+        "Pz": 8.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Link",
+      "values": {
+        "ElementCount": "0",
+        "LinkClaimChild": "false",
+        "LinkCopyOnChangeTouched": "false",
+        "LinkExecute": "",
+        "LinkTransform": "false",
+        "Scale": 1.0,
+        "ShowElement": "true",
+        "_LinkOwner": "0"
+      }
+    },
     "CanaryPart": {
       "label": "canaryPart",
       "links": {
         "LinkedObject": [
           {
             "file": "parts/canary-part.FCStd",
-            "object": "CanaryBlock"
+            "object": "BasePlate"
           }
         ]
       },
@@ -79,8 +161,120 @@
         "_LinkOwner": "0"
       }
     },
+    "FixedScrew1": {
+      "label": "Fixed boardScrew1",
+      "links": {
+        "Reference1": [
+          {
+            "file": "",
+            "object": "CanaryPart",
+            "sub": [
+              "Edge22",
+              "Edge22"
+            ]
+          }
+        ],
+        "Reference2": [
+          {
+            "file": "",
+            "object": "BoardScrew1",
+            "sub": [
+              "Edge4",
+              "Edge4"
+            ]
+          }
+        ]
+      },
+      "type": "App::FeaturePython",
+      "values": {
+        "Angle": 0.0,
+        "AngleMax": 0.0,
+        "AngleMin": 0.0,
+        "Detach1": "false",
+        "Detach2": "false",
+        "Distance": 0.0,
+        "Distance2": 0.0,
+        "EnableAngleMax": "false",
+        "EnableAngleMin": "false",
+        "EnableLengthMax": "false",
+        "EnableLengthMin": "false",
+        "LengthMax": 0.0,
+        "LengthMin": 0.0,
+        "Suppressed": "false"
+      }
+    },
+    "FixedScrew2": {
+      "label": "Fixed boardScrew2",
+      "links": {
+        "Reference1": [
+          {
+            "file": "",
+            "object": "CanaryPart",
+            "sub": [
+              "Edge24",
+              "Edge24"
+            ]
+          }
+        ],
+        "Reference2": [
+          {
+            "file": "",
+            "object": "BoardScrew2",
+            "sub": [
+              "Edge4",
+              "Edge4"
+            ]
+          }
+        ]
+      },
+      "type": "App::FeaturePython",
+      "values": {
+        "Angle": 0.0,
+        "AngleMax": 0.0,
+        "AngleMin": 0.0,
+        "Detach1": "false",
+        "Detach2": "false",
+        "Distance": 0.0,
+        "Distance2": 0.0,
+        "EnableAngleMax": "false",
+        "EnableAngleMin": "false",
+        "EnableLengthMax": "false",
+        "EnableLengthMin": "false",
+        "LengthMax": 0.0,
+        "LengthMin": 0.0,
+        "Suppressed": "false"
+      }
+    },
+    "GroundedJoint": {
+      "label": "GroundedJoint",
+      "links": {
+        "ObjectToGround": [
+          {
+            "file": "",
+            "object": "CanaryPart"
+          }
+        ]
+      },
+      "type": "App::FeaturePython"
+    },
     "Joints": {
       "label": "Joints",
+      "links": {
+        "Group": [
+          {
+            "file": "",
+            "object": "GroundedJoint"
+          },
+          {
+            "file": "",
+            "object": "FixedScrew1"
+          },
+          {
+            "file": "",
+            "object": "FixedScrew2"
+          }
+        ]
+      },
       "type": "Assembly::JointGroup"
     },
     "Origin": {

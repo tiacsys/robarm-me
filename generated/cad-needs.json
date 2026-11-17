@@ -9,14 +9,25 @@
           "configs": [
             "SYS-CFG-0001"
           ],
-          "content": "FreeCAD object ``CanaryBlock`` (Part::Box) in ``assemblies/canary-assembly/parts/canary-part.FCStd``.",
+          "content": "FreeCAD object ``BasePlate`` (Part::Cut) in ``assemblies/canary-assembly/parts/canary-part.FCStd``.",
           "id": "ME-PART-0001",
           "realizes": [
             "SYS-EL-0001"
           ],
           "source_file": "assemblies/canary-assembly/parts/canary-part.FCStd",
           "status": "valid",
-          "title": "Canary part",
+          "title": "Canary base plate",
+          "type": "me-part"
+        },
+        "ME-PART-0002": {
+          "content": "FreeCAD object ``Screw`` (Part::Cut) in ``lib/iso7380-1-m3x6.FCStd``.",
+          "id": "ME-PART-0002",
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "lib/iso7380-1-m3x6.FCStd",
+          "status": "valid",
+          "title": "ISO 7380-1 M3x6",
           "type": "me-part"
         }
       }
