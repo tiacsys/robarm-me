@@ -5,6 +5,9 @@
   "file": "assemblies/canary-assembly/parts/canary-part.FCStd",
   "objects": {
     "CanaryBlock": {
+      "expressions": {
+        "Length": "canary_assembly_skeleton#MasterSketch.Constraints.partLength"
+      },
       "label": "Canary part",
       "placement": {
         "Px": 0.0,

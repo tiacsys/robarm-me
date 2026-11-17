@@ -5,5 +5,7 @@ ME-ASM:
   - 1
 ME-PART:
   - 1
+ME-PORT:
+  - 1
 ME-REQ: []
 ME-TC: []

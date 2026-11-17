@@ -20,6 +20,22 @@
           "sysml_kind": "PartDefinition",
           "title": "CanaryAssembly",
           "type": "me-asm"
+        },
+        "ME-PORT-0001": {
+          "content": "SysML ``PortDefinition`` ``RobArmMe::Canary::CanaryMount``.",
+          "id": "ME-PORT-0001",
+          "instances": [
+            "RobArmMe::Canary::CanaryAssembly::mount"
+          ],
+          "part_of": [
+            "ME-ASM-0001"
+          ],
+          "qualified_name": "RobArmMe::Canary::CanaryMount",
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PortDefinition",
+          "title": "CanaryMount",
+          "type": "me-port"
         }
       }
     }
