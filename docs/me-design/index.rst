@@ -19,7 +19,13 @@ What will go here
 In iteration 1 this is one document. It will be split into a requirements document, an assembly
 design document and test documents once that content exists.
 
-Assemblies and parts with a trace ID become needs. They are imported here from the generated
+The elements of the ME model (assembly defs ``ME-ASM``, port defs ``ME-PORT``) are needs; the
+assembly documents (``asm-<name>``) link to them. They are imported here from the generated model
+needs:
+
+.. needimport:: /generated/model-needs.json
+
+Parts with a trace ID in FreeCAD become needs too. They are imported here from the generated
 file:
 
 .. needimport:: /generated/cad-needs.json
