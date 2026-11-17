@@ -27,7 +27,171 @@
       "values": {
         "Height": 5.0,
         "Length": 20.0,
+        "Material": "PLA",
+        "PrintProfile": "pla-standard",
         "Width": 10.0
+      }
+    },
+    "Origin": {
+      "label": "Origin",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Point",
+      "values": {
+        "Role": "Origin"
+      }
+    },
+    "VersionMark": {
+      "label": "VersionMark",
+      "links": {
+        "OriginFeatures": [
+          {
+            "file": "",
+            "object": "X_Axis"
+          },
+          {
+            "file": "",
+            "object": "Y_Axis"
+          },
+          {
+            "file": "",
+            "object": "Z_Axis"
+          },
+          {
+            "file": "",
+            "object": "XY_Plane"
+          },
+          {
+            "file": "",
+            "object": "XZ_Plane"
+          },
+          {
+            "file": "",
+            "object": "YZ_Plane"
+          },
+          {
+            "file": "",
+            "object": "Origin"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 2.0,
+        "Py": 3.0,
+        "Pz": 5.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Part::LocalCoordinateSystem",
+      "values": {
+        "MaxWidth": 18.0,
+        "Role": "version-emboss",
+        "TextSize": 3.0
+      }
+    },
+    "XY_Plane": {
+      "label": "XY-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XY_Plane"
+      }
+    },
+    "XZ_Plane": {
+      "label": "XZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.707107,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 0.707107
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XZ_Plane"
+      }
+    },
+    "X_Axis": {
+      "label": "X-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "X_Axis"
+      }
+    },
+    "YZ_Plane": {
+      "label": "YZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "YZ_Plane"
+      }
+    },
+    "Y_Axis": {
+      "label": "Y-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Y_Axis"
+      }
+    },
+    "Z_Axis": {
+      "label": "Z-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": -0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Z_Axis"
       }
     }
   },
