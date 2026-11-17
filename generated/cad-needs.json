@@ -4,7 +4,22 @@
   "project": "robarm-me-cad",
   "versions": {
     "": {
-      "needs": {}
+      "needs": {
+        "ME-PART-0001": {
+          "configs": [
+            "SYS-CFG-0001"
+          ],
+          "content": "FreeCAD object ``CanaryBlock`` (Part::Box) in ``parts/canary-part.FCStd``.",
+          "id": "ME-PART-0001",
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "parts/canary-part.FCStd",
+          "status": "valid",
+          "title": "Canary part",
+          "type": "me-part"
+        }
+      }
     }
   }
 }
