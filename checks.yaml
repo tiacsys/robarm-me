@@ -9,6 +9,21 @@ ids:                                    # CK-C1, CK-C2
   ledger: ids.yaml
   exclude: ["*.md", "claude/**", ".github/**"]
 
+model:                                  # CK-E1, CK-D2 (SysML v2 Pilot), CK-E4 (conformance)
+  # The ME model refines the system model (XD-ADR-0130). The system model is a library set for the
+  # Pilot (with the libraries it imports) and, as robarm-syseng's committed model.json, the
+  # upstream of the conformance check (no Java). Both come from the same west pin.
+  libraries:
+    - "{ws}/libs/sysmod-sysmlv2/SYSMOD.sysml"
+    - "{ws}/libs/sysmod-sysmlv2/SYSMOD15288.sysml"
+    - "{ws}/libs/pleml/PLEML.sysml"
+    - "{ws}/robarm-syseng/model/generated/NeedStubs.sysml"
+    - "{ws}/robarm-syseng/model/*.sysml"
+  files: ["model/*.sysml"]
+  json: generated/model.json
+  needs: generated/model-needs.json
+  upstream: "{ws}/robarm-syseng/generated/model.json"
+
 cad:                                    # CK-D4 (plain Python, also without FreeCAD), CK-H1
   freecad: ["parts/*.FCStd", "assemblies/**/*.FCStd", "lib/**/*.FCStd"]
   needs: generated/cad-needs.json
@@ -16,12 +31,14 @@ cad:                                    # CK-D4 (plain Python, also without Free
 
 requirements: true                      # CK-E2, CK-E3 on the ME requirements
 
-# Domain checks (CK-F3 parameters vs. model, CK-F4 recompute) are added as `commands` once the
-# first FreeCAD file exists.
+# FreeCAD assemblies (plain Python, with the model section): CK-F14 the 1:1 between assembly defs of
+# the ME model and FreeCAD documents (assemblies/<name>/<name>.FCStd + skeleton.FCStd, XD-ADR-0137),
+# CK-F15 the FreeCAD links per part vs the usages in the ME and system models (XD-ADR-0138).
 
 # CK-H6: exactly the checks this repo runs (built-in and commands). A section that goes
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D4, CK-D5, CK-E2, CK-E3, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3, CK-H4, CK-H6, CK-H7
+  CK-D2, CK-D4, CK-D5, CK-E1, CK-E2, CK-E3, CK-E4, CK-F14, CK-F15, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-H4, CK-H6, CK-H7
 ]

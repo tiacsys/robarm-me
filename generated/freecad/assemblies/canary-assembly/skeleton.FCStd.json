@@ -1,0 +1,219 @@
+{
+  "document": {
+    "Label": "skeleton"
+  },
+  "file": "assemblies/canary-assembly/skeleton.FCStd",
+  "objects": {
+    "MasterSketch": {
+      "label": "MasterSketch",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "Sketcher::SketchObject",
+      "values": {
+        "FullyConstrained": "true",
+        "MakeInternals": "false",
+        "_ExternalGeoVersion": "1"
+      }
+    },
+    "Origin": {
+      "label": "Origin",
+      "links": {
+        "OriginFeatures": [
+          {
+            "file": "",
+            "object": "X_Axis"
+          },
+          {
+            "file": "",
+            "object": "Y_Axis"
+          },
+          {
+            "file": "",
+            "object": "Z_Axis"
+          },
+          {
+            "file": "",
+            "object": "XY_Plane"
+          },
+          {
+            "file": "",
+            "object": "XZ_Plane"
+          },
+          {
+            "file": "",
+            "object": "YZ_Plane"
+          },
+          {
+            "file": "",
+            "object": "Origin001"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Origin"
+    },
+    "Origin001": {
+      "label": "Origin001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Point",
+      "values": {
+        "Role": "Origin"
+      }
+    },
+    "Skeleton": {
+      "label": "Skeleton",
+      "links": {
+        "Group": [
+          {
+            "file": "",
+            "object": "MasterSketch"
+          }
+        ],
+        "Origin": [
+          {
+            "file": "",
+            "object": "Origin"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Part",
+      "values": {
+        "Id": "",
+        "License": "",
+        "LicenseURL": "",
+        "Type": ""
+      }
+    },
+    "XY_Plane": {
+      "label": "XY-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XY_Plane"
+      }
+    },
+    "XZ_Plane": {
+      "label": "XZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.707107,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 0.707107
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XZ_Plane"
+      }
+    },
+    "X_Axis": {
+      "label": "X-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "X_Axis"
+      }
+    },
+    "YZ_Plane": {
+      "label": "YZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "YZ_Plane"
+      }
+    },
+    "Y_Axis": {
+      "label": "Y-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Y_Axis"
+      }
+    },
+    "Z_Axis": {
+      "label": "Z-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": -0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Z_Axis"
+      }
+    }
+  },
+  "spreadsheets": {
+    "Params": {}
+  }
+}
