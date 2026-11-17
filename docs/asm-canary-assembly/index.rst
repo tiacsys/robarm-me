@@ -14,6 +14,17 @@ Overview
 
 .. xd-asm-overview:: canary-assembly
 
+Block diagrams
+--------------
+
+The assembly def of the ME model: its parts, and its ports (from the model; ``curatrix views build``):
+
+.. sysml-view:: /views/canaryAssemblyParts.drawio.svg
+   :caption: Parts of the canary assembly (view ``canaryAssemblyParts``)
+
+.. sysml-view:: /views/canaryAssembly.drawio.svg
+   :caption: The canary assembly and its ports (view ``canaryAssembly``)
+
 Drawings
 --------
 

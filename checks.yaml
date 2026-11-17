@@ -24,6 +24,9 @@ model:                                  # CK-E1, CK-D2 (SysML v2 Pilot), CK-E4 (
   needs: generated/model-needs.json
   upstream: "{ws}/robarm-syseng/generated/model.json"
 
+views:                                  # CK-D3: views/<view>.drawio.svg match the model
+  dir: views
+
 cad:                                    # CK-D4 (plain Python, also without FreeCAD), CK-H1
   freecad: ["parts/*.FCStd", "assemblies/**/*.FCStd", "lib/**/*.FCStd"]
   needs: generated/cad-needs.json
@@ -53,6 +56,6 @@ requirements: true                      # CK-E2, CK-E3 on the ME requirements
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D2, CK-D4, CK-D5, CK-D10, CK-E1, CK-E2, CK-E3, CK-E4, CK-F3, CK-F4c, CK-F9, CK-F12, CK-F14, CK-F15, CK-F16, CK-F17, CK-F18, CK-F19, CK-F21, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-D2, CK-D3, CK-D4, CK-D5, CK-D10, CK-E1, CK-E2, CK-E3, CK-E4, CK-F3, CK-F4c, CK-F9, CK-F12, CK-F14, CK-F15, CK-F16, CK-F17, CK-F18, CK-F19, CK-F21, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]

@@ -13,6 +13,30 @@
         "jdk": "21.0.13+9",
         "sysml-pilot": "0.63.1"
       }
+    },
+    "views/canaryAssembly.drawio.svg": {
+      "made_by": "curatrix views build",
+      "tools": {
+        "drawio-viewer": "32.6.1",
+        "elkjs": "0.12.1",
+        "firefox": "160.0"
+      }
+    },
+    "views/canaryAssemblyParts.drawio.svg": {
+      "made_by": "curatrix views build",
+      "tools": {
+        "drawio-viewer": "32.6.1",
+        "elkjs": "0.12.1",
+        "firefox": "160.0"
+      }
+    },
+    "views/meAllocation.drawio.svg": {
+      "made_by": "curatrix views build",
+      "tools": {
+        "drawio-viewer": "32.6.1",
+        "elkjs": "0.12.1",
+        "firefox": "160.0"
+      }
     }
   },
   "version": 1
