@@ -36,7 +36,7 @@ package RobArmMe {
             :>> holeDiameter = 3.2 [mm];
             :>> hole1X = 4 [mm];
             :>> hole1Y = 4 [mm];
-            :>> hole2X = 26 [mm];
+            :>> hole2X = 24 [mm];
             :>> hole2Y = 16 [mm];
         }
 

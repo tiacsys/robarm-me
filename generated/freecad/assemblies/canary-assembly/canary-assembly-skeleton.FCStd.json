@@ -11,7 +11,7 @@
         "hole1X": 4.0,
         "hole1Y": 4.0,
         "hole2D": 3.2,
-        "hole2X": 26.0,
+        "hole2X": 24.0,
         "hole2Y": 16.0,
         "width": 30.0
       },
@@ -622,7 +622,7 @@
       "boardSeat_depth": "20 mm",
       "boardSeat_hole1X": "4 mm",
       "boardSeat_hole1Y": "4 mm",
-      "boardSeat_hole2X": "26 mm",
+      "boardSeat_hole2X": "24 mm",
       "boardSeat_hole2Y": "16 mm",
       "boardSeat_holeDiameter": "3.2 mm",
       "boardSeat_width": "30 mm",
