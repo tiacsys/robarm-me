@@ -1,0 +1,32 @@
+{
+  "document": {
+    "Label": "canary-part"
+  },
+  "file": "parts/canary-part.FCStd",
+  "objects": {
+    "CanaryBlock": {
+      "label": "Canary part",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "trace": {
+        "Configs": "SYS-CFG-0001",
+        "Realizes": "SYS-EL-0001",
+        "TraceID": "ME-PART-0001"
+      },
+      "type": "Part::Box",
+      "values": {
+        "Height": 5.0,
+        "Length": 20.0,
+        "Width": 10.0
+      }
+    }
+  },
+  "spreadsheets": {}
+}
