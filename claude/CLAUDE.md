@@ -24,6 +24,10 @@ parts (`lib/`), TechDraw templates (`templates/`), print profiles (`print/`), sc
   link per usage in the model (CK-F15); parts refer only to the skeleton, never to the top
   document (CK-F14). A part that takes values from a skeleton belongs to that assembly
   (`assemblies/<name>/parts/`); a shared part in `parts/` takes none.
+- **Boards** come from the board library (`robarm-freecad-pcba`, XD-ADR-0139): link one fixed version
+  `boards/<board>/<board>-vX.Y.Z[-<variant>].FCStd` (object `Board`). Never copy a board model into
+  this repo and never export one yourself. When the library has a newer version, CK-F21 warns; moving
+  an assembly to it is an ME change in its own PR.
 - After a FreeCAD change: `curatrix gen all robarm-me` (cad-needs and semantic JSON in
   `generated/freecad/`), and commit them with the `.FCStd`.
 - `.FCStd` files cannot be merged (`-merge` in `.gitattributes`). On a conflict, take one side

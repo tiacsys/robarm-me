@@ -28,6 +28,8 @@ cad:                                    # CK-D4 (plain Python, also without Free
   freecad: ["parts/*.FCStd", "assemblies/**/*.FCStd", "lib/**/*.FCStd"]
   needs: generated/cad-needs.json
   freecad_json: generated/freecad       # semantic JSON per .FCStd (diffs, review, D63)
+  board_library: "{ws}/robarm-freecad-pcba"   # CK-F21: a link to an older board version than the newest
+                                        # in the board library gets a note (XD-ADR-0139)
 
 requirements: true                      # CK-E2, CK-E3 on the ME requirements
 
@@ -47,6 +49,6 @@ requirements: true                      # CK-E2, CK-E3 on the ME requirements
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D2, CK-D4, CK-D5, CK-E1, CK-E2, CK-E3, CK-E4, CK-F3, CK-F4c, CK-F9, CK-F14, CK-F15, CK-F16, CK-F17, CK-F18, CK-F19, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-D2, CK-D4, CK-D5, CK-E1, CK-E2, CK-E3, CK-E4, CK-F3, CK-F4c, CK-F9, CK-F14, CK-F15, CK-F16, CK-F17, CK-F18, CK-F19, CK-F21, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]
