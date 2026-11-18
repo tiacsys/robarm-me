@@ -19,13 +19,15 @@ package RobArmMe {
 
         // A standard fastener of the local library lib/iso7380-1-m3x6.FCStd: button head screw
         // ISO 7380-1 M3x6, A2 (Standard property). It holds the canary board on a boss of the base
-        // plate: 1.6 mm board plus 4.4 mm in the insert.
+        // plate: 1.6 mm board plus 4.4 mm in the insert. A catalog part: it realizes no system
+        // element (the schema rule R3 leaves parts with a Standard out).
         part def <'ME-PART-0002'> ButtonHeadScrewM3x6;
 
         // The mounting interface of the canary assembly: an LCS with Port = this ID in the
         // skeleton (XD-ADR-0133). It conforms to no SYS-IF (allowed for ports).
         port def <'ME-PORT-0001'> CanaryMount :> MechanicalPort {
-            doc /* Two holes in the bottom face of the base plate (the canary part), 12 mm apart. */
+            doc /* The mounting point in the middle of the base plate's bottom face. holeSpacing is the
+                   planned spacing of two mounting holes; the plate has no such holes yet. */
             attribute holeSpacing = 12 [mm];
         }
 
@@ -56,9 +58,12 @@ package RobArmMe {
         // layout from them in the assembly frame: plate length, plate width (board depth plus twice
         // the seat's y offset, so the margin around the board is the same on both sides), plate
         // thickness, the boss positions (seat placement plus the budget's hole positions) and the
-        // boss height (seat z minus 1.6 mm board minus the plate thickness: 3.4 mm, more than the
-        // 1.4 mm the budget's heightBelow leaves for the board's bottom-side parts). The part takes
-        // its dimensions from the master sketch, the LCS their positions from Params (CK-F3).
+        // boss height (seat z minus the board thickness minus the plate thickness: 3.4 mm, more than
+        // the 1.4 mm the budget's heightBelow leaves for the board's bottom-side parts). The board
+        // thickness (1.6 mm, an EE value, not in the budget) is one named constraint of the master
+        // sketch, boardThickness; the boss height and the screws' joint offset use it. The part
+        // takes its dimensions from the master sketch, the LCS their positions from Params (CK-F3);
+        // each screw is joined to an LCS of the plate at the top of its insert (LCS_insert1, 2).
         part def <'ME-ASM-0001'> CanaryAssembly :> RobArmProduct::Canary::CanaryUnit, Assembly {
             doc /* The canary assembly: the base plate with two stand-offs, the board seat, two screws. */
             part canaryPart : CanaryPart {

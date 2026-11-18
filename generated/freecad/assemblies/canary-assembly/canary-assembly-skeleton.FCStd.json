@@ -153,6 +153,7 @@
     },
     "MasterSketch": {
       "constraints": {
+        "boardThickness": 1.6,
         "boss1X": 9.0,
         "boss1Y": 9.0,
         "boss2X": 29.0,
@@ -167,7 +168,7 @@
         ".Constraints.boss1Y": "Params.boardSeat_y + Params.boardSeat_hole1Y",
         ".Constraints.boss2X": "Params.boardSeat_x + Params.boardSeat_hole2X",
         ".Constraints.boss2Y": "Params.boardSeat_y + Params.boardSeat_hole2Y",
-        ".Constraints.bossHeight": "Params.boardSeat_z - 1.6 mm - Params.canaryPart_thickness",
+        ".Constraints.bossHeight": "Params.boardSeat_z - .Constraints.boardThickness - Params.canaryPart_thickness",
         ".Constraints.partLength": "Params.canaryPart_length",
         ".Constraints.plateThickness": "Params.canaryPart_thickness",
         ".Constraints.plateWidth": "Params.boardSeat_depth + 2 * Params.boardSeat_y"

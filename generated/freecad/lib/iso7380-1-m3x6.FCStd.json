@@ -77,7 +77,6 @@
         "Q3": 1.0
       },
       "trace": {
-        "Realizes": "SYS-EL-0001",
         "TraceID": "ME-PART-0002"
       },
       "type": "Part::Cut",
