@@ -37,7 +37,9 @@ package RobArmMe {
         // Params, the sketch BoardOutline of the skeleton follows them, and the KiCad StepUp push
         // writes that sketch (outline and holes) into the KiCad board. The values are copies of the
         // budget, so they do not count toward the ten parameters; change them only together with
-        // the budget, on one branch (co-design change).
+        // the budget, on one branch (co-design change). The mounting zones (mountZoneDiameter around
+        // each hole, both sides of the board) take the bosses of the base plate and the screw heads;
+        // no geometry follows the value, CK-F18 reads it.
         port def <'ME-PORT-0002'> CanaryBoardSeat :> RobArmProduct::Canary::CanaryBoardSpace, MechanicalPort {
             doc /* Outline and mounting holes of the canary board, in the board frame. */
             :>> width = 30 [mm];
@@ -47,6 +49,7 @@ package RobArmMe {
             :>> hole1Y = 4 [mm];
             :>> hole2X = 24 [mm];
             :>> hole2Y = 16 [mm];
+            :>> mountZoneDiameter = 8 [mm];   // the bosses below and the screw heads above sit in these zones
         }
 
         // The canary assembly realizes the canary unit: the base plate (canary part) with the board

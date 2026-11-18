@@ -1237,6 +1237,9 @@
      "@id": "RobArmMe::Canary::CanaryBoardSeat::hole2Y"
     },
     {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    },
+    {
      "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::heightAbove"
     },
     {
@@ -8643,6 +8646,9 @@
      "@id": "RobArmMe::Canary::CanaryBoardSeat::hole2Y"
     },
     {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    },
+    {
      "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::heightAbove"
     },
     {
@@ -8699,6 +8705,9 @@
     },
     {
      "@id": "RobArmMe::Canary::CanaryBoardSeat::hole2Y"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
     }
    ],
    "ownedMember": [
@@ -8725,6 +8734,9 @@
     },
     {
      "@id": "RobArmMe::Canary::CanaryBoardSeat::hole2Y"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
     },
     {
      "@id": "RobArmMe::Canary::CanaryBoardSeat::'~CanaryBoardSeat'"
@@ -8763,6 +8775,9 @@
     },
     {
      "@id": "RobArmMe::Canary::CanaryBoardSeat/10"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat/11"
     }
    ],
    "owner": {
@@ -8870,6 +8885,49 @@
   },
   "payload": {
    "@id": "RobArmMe::Canary::CanaryBoardSeat/10",
+   "@type": "FeatureMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "memberName": "mountZoneDiameter",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat/11"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat/11",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
@@ -9296,7 +9354,7 @@
     "@id": "RobArmMe::Canary::CanaryBoardSeat"
    },
    "owningRelationship": {
-    "@id": "RobArmMe::Canary::CanaryBoardSeat/10"
+    "@id": "RobArmMe::Canary::CanaryBoardSeat/11"
    },
    "qualifiedName": "RobArmMe::Canary::CanaryBoardSeat::'~CanaryBoardSeat'"
   }
@@ -13540,6 +13598,706 @@
  },
  {
   "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter",
+   "@type": "ReferenceUsage",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "mountZoneDiameter",
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat/10"
+   },
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat"
+   },
+   "qualifiedName": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/0",
+   "@type": "Redefinition",
+   "general": {
+    "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "redefinedFeature": {
+    "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    },
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "subsettedFeature": {
+    "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
+   },
+   "target": [
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0",
+   "@type": "OperatorExpression",
+   "feature": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "operator": "[",
+   "ownedFeature": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+    }
+   ],
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0",
+   "@type": "ParameterMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+   },
+   "memberName": "x",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0",
+   "@type": "Feature",
+   "direction": "in",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "name": "x",
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0"
+   },
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0/0",
+   "@type": "LiteralInteger",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/0/0/0"
+   },
+   "value": 8
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1",
+   "@type": "ParameterMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+   },
+   "memberName": "y",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0",
+   "@type": "Feature",
+   "direction": "in",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "name": "y",
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1"
+   },
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0",
+   "@type": "FeatureReferenceExpression",
+   "feature": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "ownedFeature": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+    }
+   ],
+   "ownedMember": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0"
+   },
+   "referent": {
+    "@id": "lib:SI::millimetre"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/0",
+   "@type": "Membership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "lib:SI::millimetre"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    },
+    {
+     "@id": "lib:SI::millimetre"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "lib:SI::millimetre"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1",
+   "@type": "ReturnParameterMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+   },
+   "memberName": "result",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1/0",
+   "@type": "Feature",
+   "direction": "out",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "name": "result",
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0/1"
+   },
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/1/0/0/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2",
+   "@type": "ReturnParameterMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+   },
+   "memberName": "result",
+   "membershipOwningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    },
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0"
+  },
+  "payload": {
+   "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2/0",
+   "@type": "Feature",
+   "direction": "out",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "name": "result",
+   "owner": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0/2"
+   },
+   "owningType": {
+    "@id": "RobArmMe::Canary::CanaryBoardSeat::mountZoneDiameter/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
    "@id": "RobArmMe::Canary::CanaryBoardSeat::width"
   },
   "payload": {
@@ -17560,6 +18318,19 @@
    "isLibraryElement": true,
    "name": "j1Y",
    "qualifiedName": "RobArmProduct::Canary::CanaryBoardSpace::j1Y"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
+  },
+  "payload": {
+   "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter",
+   "@type": "AttributeUsage",
+   "declaredName": "mountZoneDiameter",
+   "isLibraryElement": true,
+   "name": "mountZoneDiameter",
+   "qualifiedName": "RobArmProduct::Canary::CanaryBoardSpace::mountZoneDiameter"
   }
  },
  {
