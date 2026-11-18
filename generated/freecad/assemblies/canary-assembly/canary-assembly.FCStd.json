@@ -39,6 +39,10 @@
           {
             "file": "",
             "object": "FixedScrew2"
+          },
+          {
+            "file": "",
+            "object": "CanaryBoard"
           }
         ],
         "Origin": [
@@ -112,6 +116,40 @@
       "placement": {
         "Px": 29.0,
         "Py": 21.0,
+        "Pz": 8.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Link",
+      "values": {
+        "ElementCount": "0",
+        "LinkClaimChild": "false",
+        "LinkCopyOnChangeTouched": "false",
+        "LinkExecute": "",
+        "LinkTransform": "false",
+        "Scale": 1.0,
+        "ShowElement": "true",
+        "_LinkOwner": "0"
+      }
+    },
+    "CanaryBoard": {
+      "expressions": {
+        "Placement": "canary_assembly_skeleton#LCS_boardSeat.Placement"
+      },
+      "label": "canaryBoard",
+      "links": {
+        "LinkedObject": [
+          {
+            "file": "../../../robarm-freecad-pcba/boards/canary-board/canary-board-v0.1.0-default.FCStd",
+            "object": "Board"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 5.0,
+        "Py": 5.0,
         "Pz": 8.0,
         "Q0": 0.0,
         "Q1": 0.0,
