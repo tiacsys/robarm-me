@@ -13,9 +13,31 @@ groups:
     title: "System"
 
 documents:
-  # own documents
+  # own documents: the V-model documents in docs/<id>/, per-deliverable documents in a sub-folder
+  # (docs/assemblies/; tiacsys/xdmod#69 Q8, CK-A7)
+  me-req:
+    title: "ME Requirements Specification"
+    group: g-me
+    version_project: robarm-me
+    builders: [html]
+    needs: {source: json}
+
   me-design:
-    title: "ME Requirements and Design"
+    title: "ME Design"
+    group: g-me
+    version_project: robarm-me
+    builders: [html]
+    needs: {source: json}
+
+  me-test-spec:
+    title: "ME Test Specification"
+    group: g-me
+    version_project: robarm-me
+    builders: [html]
+    needs: {source: json}
+
+  me-test-report:
+    title: "ME Test Report"
     group: g-me
     version_project: robarm-me
     builders: [html]
@@ -24,6 +46,7 @@ documents:
   asm-canary-assembly:
     title: "Canary Assembly"
     group: g-me
+    doc_dir: assemblies/asm-canary-assembly
     version_project: robarm-me
     builders: [html]
     needs: {source: json}

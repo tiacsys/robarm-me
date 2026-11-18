@@ -2,7 +2,7 @@
 version: 1
 area: robarm-me
 
-docs:                                   # CK-A6 strict docs build (me-design + upstream se-req, se-arch)
+docs:                                   # CK-A6 strict docs build (own documents + upstream se-req, se-arch), CK-A7 layout
   registry: docs/documents.yaml
 
 ids:                                    # CK-C1, CK-C2
@@ -55,7 +55,7 @@ requirements: true                      # CK-E2, CK-E3 on the ME requirements
 # CK-H6: exactly the checks this repo runs (built-in and commands). A section that goes
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
-  CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B6, CK-B7, CK-C1, CK-C2,
+  CK-A1, CK-A3, CK-A6, CK-A7, CK-B1, CK-B2, CK-B3, CK-B5, CK-B6, CK-B7, CK-C1, CK-C2,
   CK-D2, CK-D3, CK-D4, CK-D5, CK-D10, CK-E1, CK-E2, CK-E3, CK-E4, CK-F3, CK-F4c, CK-F9, CK-F12, CK-F14, CK-F15, CK-F16, CK-F17, CK-F18, CK-F19, CK-F21, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]
