@@ -14420,7 +14420,7 @@
      "@id": "RobArmMe::Canary::CanaryMount"
     }
    ],
-   "body": "Two holes in the bottom face of the base plate (the canary part), 12 mm apart. ",
+   "body": "The mounting point in the middle of the base plate's bottom face. holeSpacing is the\nplanned spacing of two mounting holes; the plate has no such holes yet. ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmMe::Canary::CanaryMount"

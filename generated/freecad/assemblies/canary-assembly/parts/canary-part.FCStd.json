@@ -4,8 +4,32 @@
   },
   "file": "assemblies/canary-assembly/parts/canary-part.FCStd",
   "objects": {
+    "BaseFeature": {
+      "label": "BaseFeature",
+      "links": {
+        "BaseFeature": [
+          {
+            "file": "",
+            "object": "BasePlate"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "PartDesign::FeatureBase",
+      "values": {
+        "Suppressed": "false"
+      }
+    },
     "BasePlate": {
-      "label": "Canary base plate",
+      "label": "BasePlate",
       "links": {
         "Base": [
           {
@@ -29,15 +53,8 @@
         "Q2": 0.0,
         "Q3": 1.0
       },
-      "trace": {
-        "Configs": "SYS-CFG-0001",
-        "Realizes": "SYS-EL-0001",
-        "TraceID": "ME-PART-0001"
-      },
       "type": "Part::Cut",
       "values": {
-        "Material": "PLA",
-        "PrintProfile": "pla-standard",
         "Refine": "true"
       }
     },
@@ -114,6 +131,63 @@
         "Height": 3.0,
         "Length": 40.0,
         "Width": 30.0
+      }
+    },
+    "CanaryPlate": {
+      "label": "Canary base plate",
+      "links": {
+        "BaseFeature": [
+          {
+            "file": "",
+            "object": "BasePlate"
+          }
+        ],
+        "Group": [
+          {
+            "file": "",
+            "object": "BaseFeature"
+          },
+          {
+            "file": "",
+            "object": "LCS_insert1"
+          },
+          {
+            "file": "",
+            "object": "LCS_insert2"
+          }
+        ],
+        "Origin": [
+          {
+            "file": "",
+            "object": "Origin001"
+          }
+        ],
+        "Tip": [
+          {
+            "file": "",
+            "object": "BaseFeature"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "trace": {
+        "Configs": "SYS-CFG-0001",
+        "Realizes": "SYS-EL-0001",
+        "TraceID": "ME-PART-0001"
+      },
+      "type": "PartDesign::Body",
+      "values": {
+        "AllowCompound": "true",
+        "Material": "PLA",
+        "PrintProfile": "pla-standard"
       }
     },
     "InsertHole1": {
@@ -194,8 +268,105 @@
         "Refine": "true"
       }
     },
+    "LCS_insert1": {
+      "expressions": {
+        ".Placement.Base.x": "canary_assembly_skeleton#MasterSketch.Constraints.boss1X",
+        ".Placement.Base.y": "canary_assembly_skeleton#MasterSketch.Constraints.boss1Y",
+        ".Placement.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness + canary_assembly_skeleton#MasterSketch.Constraints.bossHeight"
+      },
+      "label": "LCS_insert1",
+      "placement": {
+        "Px": 9.0,
+        "Py": 9.0,
+        "Pz": 6.4,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "PartDesign::CoordinateSystem"
+    },
+    "LCS_insert2": {
+      "expressions": {
+        ".Placement.Base.x": "canary_assembly_skeleton#MasterSketch.Constraints.boss2X",
+        ".Placement.Base.y": "canary_assembly_skeleton#MasterSketch.Constraints.boss2Y",
+        ".Placement.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.plateThickness + canary_assembly_skeleton#MasterSketch.Constraints.bossHeight"
+      },
+      "label": "LCS_insert2",
+      "placement": {
+        "Px": 29.0,
+        "Py": 21.0,
+        "Pz": 6.4,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "PartDesign::CoordinateSystem"
+    },
     "Origin": {
       "label": "Origin",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Point",
+      "values": {
+        "Role": "Origin"
+      }
+    },
+    "Origin001": {
+      "label": "Origin003",
+      "links": {
+        "OriginFeatures": [
+          {
+            "file": "",
+            "object": "X_Axis001"
+          },
+          {
+            "file": "",
+            "object": "Y_Axis001"
+          },
+          {
+            "file": "",
+            "object": "Z_Axis001"
+          },
+          {
+            "file": "",
+            "object": "XY_Plane001"
+          },
+          {
+            "file": "",
+            "object": "XZ_Plane001"
+          },
+          {
+            "file": "",
+            "object": "YZ_Plane001"
+          },
+          {
+            "file": "",
+            "object": "Origin002"
+          }
+        ]
+      },
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Origin"
+    },
+    "Origin002": {
+      "label": "Origin002",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,
@@ -311,8 +482,40 @@
         "Role": "XY_Plane"
       }
     },
+    "XY_Plane001": {
+      "label": "XY-plane001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XY_Plane"
+      }
+    },
     "XZ_Plane": {
       "label": "XZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.707107,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 0.707107
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "XZ_Plane"
+      }
+    },
+    "XZ_Plane001": {
+      "label": "XZ-plane001",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,
@@ -343,8 +546,40 @@
         "Role": "X_Axis"
       }
     },
+    "X_Axis001": {
+      "label": "X-axis001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.0,
+        "Q1": 0.0,
+        "Q2": 0.0,
+        "Q3": 1.0
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "X_Axis"
+      }
+    },
     "YZ_Plane": {
       "label": "YZ-plane",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Plane",
+      "values": {
+        "Role": "YZ_Plane"
+      }
+    },
+    "YZ_Plane001": {
+      "label": "YZ-plane001",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,
@@ -375,8 +610,40 @@
         "Role": "Y_Axis"
       }
     },
+    "Y_Axis001": {
+      "label": "Y-axis001",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": 0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Y_Axis"
+      }
+    },
     "Z_Axis": {
       "label": "Z-axis",
+      "placement": {
+        "Px": 0.0,
+        "Py": 0.0,
+        "Pz": 0.0,
+        "Q0": 0.5,
+        "Q1": -0.5,
+        "Q2": 0.5,
+        "Q3": 0.5
+      },
+      "type": "App::Line",
+      "values": {
+        "Role": "Z_Axis"
+      }
+    },
+    "Z_Axis001": {
+      "label": "Z-axis001",
       "placement": {
         "Px": 0.0,
         "Py": 0.0,

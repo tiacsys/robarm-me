@@ -30,11 +30,11 @@
           },
           {
             "file": "",
-            "object": "FixedScrew1"
+            "object": "BoardScrew2"
           },
           {
             "file": "",
-            "object": "BoardScrew2"
+            "object": "FixedScrew1"
           },
           {
             "file": "",
@@ -136,7 +136,7 @@
         "LinkedObject": [
           {
             "file": "parts/canary-part.FCStd",
-            "object": "BasePlate"
+            "object": "CanaryPlate"
           }
         ]
       },
@@ -162,6 +162,9 @@
       }
     },
     "FixedScrew1": {
+      "expressions": {
+        ".Offset1.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.boardThickness"
+      },
       "label": "Fixed boardScrew1",
       "links": {
         "Reference1": [
@@ -169,19 +172,15 @@
             "file": "",
             "object": "CanaryPart",
             "sub": [
-              "Edge22",
-              "Edge22"
+              "LCS_insert1.",
+              "LCS_insert1."
             ]
           }
         ],
         "Reference2": [
           {
             "file": "",
-            "object": "BoardScrew1",
-            "sub": [
-              "Edge4",
-              "Edge4"
-            ]
+            "object": "BoardScrew1"
           }
         ]
       },
@@ -204,6 +203,9 @@
       }
     },
     "FixedScrew2": {
+      "expressions": {
+        ".Offset1.Base.z": "canary_assembly_skeleton#MasterSketch.Constraints.boardThickness"
+      },
       "label": "Fixed boardScrew2",
       "links": {
         "Reference1": [
@@ -211,19 +213,15 @@
             "file": "",
             "object": "CanaryPart",
             "sub": [
-              "Edge24",
-              "Edge24"
+              "LCS_insert2.",
+              "LCS_insert2."
             ]
           }
         ],
         "Reference2": [
           {
             "file": "",
-            "object": "BoardScrew2",
-            "sub": [
-              "Edge4",
-              "Edge4"
-            ]
+            "object": "BoardScrew2"
           }
         ]
       },
