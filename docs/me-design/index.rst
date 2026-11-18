@@ -29,16 +29,16 @@ How the ME model refines the system model: the assembly realizes a system elemen
 seat conforms to the board's space budget (XD-ADR-0132, XD-ADR-0134):
 
 .. sysml-view:: /views/meAllocation.drawio.svg
-   :caption: ME elements and the system elements and interfaces they realize or conform to (view ``meAllocation``)
+   :caption: ME elements and the system elements and interfaces they realize or conform to (view meAllocation)
 
 The canary assembly, its parts and its ports (the assembly document ``asm-canary-assembly``
 shows the same views):
 
 .. sysml-view:: /views/canaryAssemblyParts.drawio.svg
-   :caption: Parts of the canary assembly (view ``canaryAssemblyParts``)
+   :caption: Parts of the canary assembly (view canaryAssemblyParts)
 
 .. sysml-view:: /views/canaryAssembly.drawio.svg
-   :caption: The canary assembly and its ports, the mount and the board seat (view ``canaryAssembly``)
+   :caption: The canary assembly and its ports, the mount and the board seat (view canaryAssembly)
 
 Parts with a trace ID in FreeCAD become needs too. They are imported here from the generated
 file:
