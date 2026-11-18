@@ -7,7 +7,9 @@ rules of this repo. Run every command from the workspace root.
 
 Mechanical design in FreeCAD: parts (`parts/`), assemblies (`assemblies/<asm>/`), local library
 parts (`lib/`), TechDraw templates (`templates/`), print profiles (`print/`), scripted ME checks
-(`tests/`), and one document, `docs/me-design/` (D135).
+(`tests/`), and the documents `docs/me-req/`, `docs/me-design/`, `docs/me-test-spec/`,
+`docs/me-test-report/` and one per top-level assembly in `docs/assemblies/asm-<name>/` (XD-ADR-0149,
+CK-A7).
 
 ## Rules
 
@@ -30,7 +32,7 @@ parts (`lib/`), TechDraw templates (`templates/`), print profiles (`print/`), sc
   e.g. `../../../robarm-freecad-pcba/boards/...` from `assemblies/<asm>/<asm>.FCStd`: CK-F21 resolves it
   from the file's folder and only sees links that land in the library's `boards/`. When the library
   has a newer version, CK-F21 warns; moving an assembly to it is an ME change in its own PR.
-- **Assembly document** `docs/asm-<name>/` (task 5.27): one `xd-asm-*` directive per section, the
+- **Assembly document** `docs/assemblies/asm-<name>/` (task 5.27): one `xd-asm-*` directive per section, the
   same for every assembly. Drawings, exploded view, renderings, mass and findings come only from
   `curatrix cam robarm-me <name>` of the current commit (CK-D10 warns); run it before `curatrix
   docs robarm-me`. Give own parts a `Material`, bought `lib/` parts `Manufacturer` and `MPN`, and

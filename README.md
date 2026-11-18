@@ -18,7 +18,10 @@ content comes in Phase 6.
 | `tests/` | scripted ME checks |
 | `generated/cad-needs.json` | needs read from the FreeCAD files (generated, committed) |
 | `generated/freecad/` | semantic JSON of each `.FCStd` for readable diffs (generated, committed) |
-| `docs/me-design/` | ME Requirements and Design: ME requirements, assemblies and parts |
+| `docs/me-req/` | ME Requirements Specification |
+| `docs/me-design/` | ME Design: assembly and port defs, allocation, overview |
+| `docs/me-test-spec/`, `docs/me-test-report/` | ME Test Specification and Report |
+| `docs/assemblies/asm-<assembly>/` | one document per top-level assembly |
 | `ids.yaml` | ID ledger for `ME-*` IDs |
 | `checks.yaml` | what `curatrix check robarm-me` runs |
 | `claude/` | rules and skills for agents working in this repo |
